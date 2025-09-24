@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/kajalbormon/Developer/Code/HakerRank/function/output/function'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z11max_of_fouriiii, symObjAddr: 0x0, symBinAddr: 0x100003DC4, symSize: 0x128 }
+  - { offsetInCU: 0x2DCB, offset: 0x2DCB, size: 0x8, addend: 0x0, symName: __Z11max_of_fouriiii, symObjAddr: 0x0, symBinAddr: 0x100003DC4, symSize: 0x128 }
+  - { offsetInCU: 0x2E21, offset: 0x2E21, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x128, symBinAddr: 0x100003EEC, symSize: 0x8C }
+...

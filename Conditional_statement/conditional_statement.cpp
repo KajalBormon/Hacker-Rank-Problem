@@ -1,5 +1,4 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -42,12 +41,22 @@ int main()
 
 string ltrim(const string &str) {
     string s(str);
-    size_t start = s.find_first_not_of(" \t\n\r\f\v");
-    return (start == string::npos) ? "" : s.substr(start);
+
+    s.erase(
+        s.begin(),
+        find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
+    );
+
+    return s;
 }
 
 string rtrim(const string &str) {
     string s(str);
-    size_t end = s.find_last_not_of(" \t\n\r\f\v");
-    return (end == string::npos) ? "" : s.substr(0, end + 1);
+
+    s.erase(
+        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
+        s.end()
+    );
+
+    return s;
 }

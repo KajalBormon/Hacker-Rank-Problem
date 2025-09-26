@@ -1,41 +1,18 @@
-#include <sstream>
-#include <vector>
 #include <iostream>
+#include <sstream>
+#include <string>
 using namespace std;
 
-// vector<int> parseInts(string str) {
-// 	// Complete this function
-//     vector<int> newArr;
-//     int num;
-//     char ch;
-//     stringstream ss(str);
-
-//     while(ss >> num) {
-//         newArr.push_back(num);
-//         ss >> ch;
-//     }
-//     return newArr;
-// }
-
 int main() {
-    string str;
-    cin >> str;
-    int num;
-    vector<int> newArr;
-    // vector<int> integers = parseInts(str);
-    // for(int i = 0; i < (int)integers.size(); i++) {
-    //     cout << integers[i] << "\n";
-    // }
-    stringstream ss(str);
+    string data = "101 John 3.9";
 
-    while(ss >> num) {
-        newArr.push_back(num);
-    }
+    stringstream ss(data);
+    int id;
+    string name;
+    float gpa;
 
-    for(int i = 0; i < (int)newArr.size(); i++) {
-        cout << newArr[i] << "\n";
-    }
+    ss >> id >> name >> gpa;
 
-    
-    return 0;
+    cout << "ID: " << id << ", Name: " << name << ", GPA: " << gpa << endl;
+    // Output: ID: 101, Name: John, GPA: 3.9
 }

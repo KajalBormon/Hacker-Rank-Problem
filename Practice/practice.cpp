@@ -4,31 +4,32 @@
 #include <exception>
 using namespace std;
 
-class ErrorException : public exception {
-private: 
-    int num;
-    string message; 
-public: 
-    ErrorException(const string& msg, int n) : num(n) {
-        stringstream ss;
-        ss << msg << " (Error Code: " << num << ")";
-        message = ss.str();
-    }
+// class ErrorException : public exception {
+// private: 
+//     int num;
+//     string message; 
+// public: 
+//     ErrorException(const string& msg, int n) : num(n) {
+//         stringstream ss;
+//         ss << msg << " (Error Code: " << num << ")";
+//         message = ss.str();
+//     }
 
-    const char* what() const noexcept override {
-        return message.c_str();
-    }
+//     const char* what() const noexcept override {
+//         return message.c_str();
+//     }
 
-    int code() const {   
-        return num;
-    }
-};
+//     int code() const {   
+//         return num;
+//     }
+// };
 
 int main() {
-    try {
-        throw ErrorException("Invalid length detected:", 400);
-    } catch (const ErrorException& e) {
-        cout << "Caught Exception: " << e.what() << endl;
-        cout << "Error code only: " << e.code() << endl;
+    int arr[5] = {0,20,30};
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    for(int i = 0; i < n; i++)
+    {
+        cout << arr[i] << endl;
     }
 }

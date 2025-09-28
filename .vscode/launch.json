@@ -1,18 +1,26 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
-      "request": "launch",
-      "args": [],
-<<<<<<< HEAD
-      "cwd": "/Users/kajalbormon/Developer/Code/HakerRank/Conditional_statement",
-      "program": "/Users/kajalbormon/Developer/Code/HakerRank/Conditional_statement/build/Debug/outDebug"
-=======
-      "cwd": "/Users/kajalbormon/All Resource/Hacker Rank",
-      "program": "/Users/kajalbormon/All Resource/Hacker Rank/build/Debug/outDebug"
->>>>>>> 9c2899711f50103fa46119c260a7badceade7d40
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++ Runner: Debug Session",
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "/Users/kajalbormon/Developer/Code/HakerRank/Sets-STL",
+            "program": "/Users/kajalbormon/Developer/Code/HakerRank/Sets-STL/build/Debug/outDebug"
+        },
+        {
+            "name": "C/C++: clang build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang build active file"
+        }
+    ]
 }

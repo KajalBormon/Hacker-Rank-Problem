@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/kajalbormon/Developer/Code/HakerRank/overload_operator/output/overload_operator'
+relocations:     []
+...

@@ -115,6 +115,7 @@
     "optional": "cpp",
     "ratio": "cpp",
     "variant": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "math.h": "c"
   }
 }
